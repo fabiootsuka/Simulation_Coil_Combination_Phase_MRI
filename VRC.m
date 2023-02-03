@@ -61,6 +61,6 @@ function VRC(params,noiseLv)
         end
         
         fprintf('Saving corrected phase...\n');
-        niftiwrite(ph_corr,append(dir_files,'\vrc\ph.nii'),'Compressed',true);
+        niftiwrite(ph_corr,append(dir_files,'\vrc\ph_corr.nii'),'Compressed',true);
         fprintf('Phase offset corrected\n');
     end
