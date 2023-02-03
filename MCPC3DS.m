@@ -57,6 +57,6 @@ function MCPC3DS(params,magDir,maskDir,noiseLv)
         clear off_mcpc3d
     
         fprintf('Saving corrected phase...\n');
-        niftiwrite(ph_corr,append(dir_files,'\mcpc3d-s\ph.nii'),'Compressed',true);
+        niftiwrite(ph_corr,append(dir_files,'\mcpc3d-s\ph_corr.nii'),'Compressed',true);
         fprintf('Phase offset corrected\n');
     end
