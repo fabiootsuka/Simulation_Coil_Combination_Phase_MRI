@@ -7,7 +7,7 @@ function ph_combination(params,noiseLv,method,k)
         fprintf('Skipping...\n');
     else
         mag = niftiread(append(dir_files,'\mag_ch.nii.gz'));
-        ph = niftiread(append(dir_files,'\',method,'\ph.nii.gz'));
+        ph = niftiread(append(dir_files,'\',method,'\ph_corr.nii.gz'));
         matrixSize = [size(mag,1) size(mag,2) size(mag,3) size(mag,4)];
 
         if strcmp(string(k),'h') == 1
